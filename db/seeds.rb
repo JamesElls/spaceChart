@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+
+3.times do
+    Galaxy.create(name: Faker::Space.galaxy, foundBy: Faker::Space.agency, lightYears: rand(13))
+end
+
+puts"#{Galaxy.all}"
+
+
