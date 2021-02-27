@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
+Galaxy.destroy_all
 
 3.times do
     Galaxy.create(name: Faker::Space.galaxy, foundBy: Faker::Space.agency, lightYears: rand(13))

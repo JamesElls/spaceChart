@@ -4,12 +4,14 @@ export default (props) => {
 
     const {galaxy} = props
 
+
+
     const renderGalaxy = () => {
         return(
             <div className="galaxy-container">
 
                 <h1>{galaxy.name}</h1>
-                <a href={`/galaxies/${galaxy.id}/destroy`}>delete</a>
+                
 
                 <a href={`/galaxies/${galaxy.id}/edit`}>Edit</a>
 

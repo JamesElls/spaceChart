@@ -1,3 +1,18 @@
 // Place all the styles related to the galaxies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+.galaxies-container {
+    max-width: 980px;
+    margin:auto
+}
+
+
+.galaxy-container{
+    margin: 3%;
+    padding: 1%;
+    border-radius: 1;
+    box-shadow: 2px 2px 4px 4px;
+}

@@ -21,6 +21,7 @@ export default (props) => {
     return(
     <div className="galaxies-container">
         <h1>SPACE CHART</h1>
+        <h6>TAKE A LOOK INTO HUMANITIES FUTURE</h6>
 
         {renderGalaxies()}
     </div>
