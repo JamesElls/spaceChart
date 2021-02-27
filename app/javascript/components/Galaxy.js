@@ -9,6 +9,10 @@ export default (props) => {
             <div className="galaxy-container">
 
                 <h1>{galaxy.name}</h1>
+                <a href={`/galaxies/${galaxy.id}/destroy`}>delete</a>
+
+                <a href={`/galaxies/${galaxy.id}/edit`}>Edit</a>
+
                 <p>Founded By: {galaxy.foundBy}</p>
                 <p>{galaxy.lightYears} Light Years Away</p>
             </div>
