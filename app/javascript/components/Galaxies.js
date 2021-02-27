@@ -12,6 +12,7 @@ export default (props) => {
                     <h1>{galaxy.name}</h1>
                     <p>Founded By: {galaxy.foundBy}</p>
                     <p>{galaxy.lightYears} Light Years Away</p>
+                    <a href={`/galaxies/${galaxy.id}`}>Got to the {galaxy.name} Galaxy</a>
                 </div>
             )
         })
