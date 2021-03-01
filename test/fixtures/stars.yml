@@ -2,8 +2,10 @@
 
 one:
   name: MyString
-  body: MyText
+  body: MyString
+  galaxy: one
 
 two:
   name: MyString
-  body: MyText
+  body: MyString
+  galaxy: two

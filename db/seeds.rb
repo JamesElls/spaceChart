@@ -9,8 +9,13 @@ require 'faker'
 
 Galaxy.destroy_all
 
+
+
 3.times do
-    Galaxy.create(name: Faker::Space.galaxy, foundBy: Faker::Space.agency, lightYears: rand(13))
+    galaxy = Galaxy.create(name: Faker::Space.galaxy, foundBy: Faker::Space.agency, lightYears: rand(13))
+    4.times do
+        galaxy.stars.create(name: Faker::Space.star, body: Faker::Lorem.paragraph)
+    end
 end
 
 puts"#{Galaxy.all}"

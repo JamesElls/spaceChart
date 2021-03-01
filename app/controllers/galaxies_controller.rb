@@ -6,7 +6,8 @@ class GalaxiesController < ApplicationController
     end
 
     def show
-        render component: 'Galaxy', props: {galaxy: @galaxy}
+        @stars = @galaxy.stars.all
+        render component: 'Galaxy', props: {galaxy: @galaxy, stars: @stars}
     end
 
     def new

@@ -2,9 +2,19 @@ import React from 'react'
 
 export default (props) => {
 
-    const {galaxy} = props
+    const {galaxy, stars} = props
 
-
+    const renderStars = () => {
+        return (stars.map(star => {
+            return (
+            <div className='star-container'>
+                <h3>{star.name}</h3>
+                <p>{star.body}</p>
+                <h6><a href={`/galaxies/${galaxy.id}/stars/${star.id}`}>Learn More</a></h6>
+            </div>
+            )
+        }))
+    }
 
     const renderGalaxy = () => {
         return(
@@ -23,10 +33,14 @@ export default (props) => {
     
 
     return(
-    <div className="galaxies-container">
+    <div>
         <h1><a href={'/galaxies'}>SPACE CHART</a></h1>
 
         {renderGalaxy()}
+        <div>
+        <h2>Stars:</h2>
+        {renderStars()}
+        </div>
     </div>
     )
 }
